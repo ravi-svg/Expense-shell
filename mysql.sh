@@ -4,6 +4,10 @@ log_folder="/var/lag/shell-script"
 
 echo "script name"
 echo $0
+
+spit=$(echo "ravi.sh" | cut -d "." -f1)
+$split
+
 script-name=$(echo $0 | cut -d "." -f1)
 
 echo "scriptname:"
