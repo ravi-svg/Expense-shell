@@ -2,11 +2,10 @@
 
 log_folder="/var/lag/shell-script"
 
-echo "script name"
-#echo $0
 echo $0
+scriptname=$0
 
-name=echo $0 | cut -d "." -f 1
+name=echo $(scriptname|cut -d "." -f 1)
 
 echo "scriptname:"
-$script-name
+$name
